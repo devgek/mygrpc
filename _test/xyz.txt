@@ -1,0 +1,4 @@
+// compilieren von mygrpc.proto
+// protoc muss installiert sein (/usr/bin/protoc)
+// auch das go-Plugin muss installiert sein go get -u github.com/golang/protobuf/{proto,proto-gen-go}
+protoc mygrpc.proto --go_out=plugins=grpc:.

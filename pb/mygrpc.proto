@@ -1,0 +1,15 @@
+syntax = "proto3";
+package pb;
+option go_package = "./mygrpcpb";
+service MyGrpc {
+  rpc LastName(LastNameRequest) returns (LastNameResponse) {}
+}
+
+message LastNameRequest {
+  string first = 1;
+}
+
+message LastNameResponse {
+  string last = 1;
+  string err = 2;
+}

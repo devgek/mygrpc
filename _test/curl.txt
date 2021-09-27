@@ -1,0 +1,4 @@
+curl -X POST \
+  -H 'Content-Type: application/json' \
+  -d '{"first":"Lionel"}' \
+  localhost:8080/lastName
